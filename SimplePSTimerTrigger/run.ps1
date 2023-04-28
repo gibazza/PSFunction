@@ -11,3 +11,4 @@ if ($Timer.IsPastDue) {
 
 # Write an information log with the current time.
 Write-Host "PowerShell timer trigger function ran! TIME: $currentUTCtime"
+Write-Host "Next timer schedule at $($Timer.ScheduleStatus.Next)"
